@@ -64,8 +64,77 @@
     ```
     
     **Game Broad**
+    - GameBroad là nơi xử lý logic và tương tác người chơi.
     - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
-
+    ```
+    class GameBroad: UIView {
+        static let rows = 21
+        static let cols = 12
+        ...
+        func update() -> (isGameOver:Bool, droppedBrick:Bool) {
+        
+            guard let currentBrick = self.currentBrick else { return (false, false)  }
+            
+            var droppedBrick = false
+            
+            if self.canMoveDown(currentBrick) {
+                currentBrick.moveDown()
+            
+            } else {
+            
+                droppedBrick = true
+                
+                for p in currentBrick.points {
+                    let r = Int(p.y) + currentBrick.ty
+                    let c = Int(p.x) + currentBrick.tx
+                    
+                    // check game over
+                    // can't move down and brick is out of top bound.
+                    if r < 0 {
+                        self.setNeedsDisplay()
+                        GameView.isOver = true
+                        GameBroad.time.invalidate()
+                        return (true, false)
+                    
+                    }
+                    self.board[r][c] = currentBrick.color
+                }
+                // clear lines
+                self.lineClear()
+                self.generateBrick()
+            }
+            self.setNeedsDisplay()
+            
+            return (false, droppedBrick)
+        }
+        ...
+        func gameInteraction(){
+            let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+            swipeUp.direction = .up
+            self.addGestureRecognizer(swipeUp)
+        ...
+        }
+        @objc func swiped(gesture: UISwipeGestureRecognizer){
+            if GameBroad.isPlay == true{
+                if let swipeGesture = gesture as? UISwipeGestureRecognizer{
+                    switch swipeGesture.direction{
+                        case .up:
+                            rotateBrick()
+                        case .left:
+                            updateX(-1)
+                        case .right:
+                            updateX(1)
+                        case .down:
+                            upDown()
+                        default:
+                            break
+                    }
+                }
+            }
+        }
+        ...
+    }
+    ```
 
     **Game Score**
     - Dùng để hiện thông tin Level, Score, Line, Button Play/Stop:
