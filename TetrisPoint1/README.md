@@ -73,30 +73,30 @@
         + Line: Hiển thị số hàng mà mình đã ăn được.
         + Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
         + Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
-        ```
-        // tính điểm
-        if lineCount == 1 {
-        score += 100
-        }else if lineCount == 2 {
-        score += 300
-        }else if lineCount == 3 {
-        score += 600
-        }else if lineCount == 4 {
-        score += 1000
-        }
-        // điều kiện tăng level
-        if score > 20000{
-        gameLever(6, 0.16)
-        }else if score > 10000{
-        gameLever(5, 0.23)
-        }else if score > 6000 {
-        gameLever(4, 0.28)
-        }else if score > 3000 {
-        gameLever(3, 0.32)
-        }else if score > 1500 {
-        gameLever(2, 0.35)
-        }
-        ```
+    ```
+    // tính điểm
+    if lineCount == 1 {
+    score += 100
+    }else if lineCount == 2 {
+    score += 300
+    }else if lineCount == 3 {
+    score += 600
+    }else if lineCount == 4 {
+    score += 1000
+    }
+    // điều kiện tăng level
+    if score > 20000{
+    gameLever(6, 0.16)
+    }else if score > 10000{
+    gameLever(5, 0.23)
+    }else if score > 6000 {
+    gameLever(4, 0.28)
+    }else if score > 3000 {
+    gameLever(3, 0.32)
+    }else if score > 1500 {
+    gameLever(2, 0.35)
+    }
+    ```
         
     **SoundManager**
     - Cung cấp hiệu ứng âm thanh.
