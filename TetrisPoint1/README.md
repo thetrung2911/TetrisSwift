@@ -21,12 +21,21 @@
         + GameScore.swift
         + Brick.swift
     - SoundManager.swift
-
+    
+    **GameView**
+    - Dùng để Layout giao diện của game.
+    - Game sẽ có 2 phần chính là phần Score và Broad
+    ```
+    class GameView: UIView {
+        let gameScore = GameScore(frame: CGRect.zero)
+        let gameBroad = GameBroad(frame: CGRect.zero)
+        ...
+    }
+    ```
+    
     **Brick**
     - Game có 7 loại gạch khác nhau gồm: i, j, l, t, z, s, o.
     - Gạch có các loại màu khác nhau.
-
-
 
     ```
     enum BrickType {
@@ -53,6 +62,7 @@
     ...    
     }
     ```
+    
     **Game Broad**
     - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
 
@@ -63,3 +73,39 @@
         + Line: Hiển thị số hàng mà mình đã ăn được.
         + Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
         + Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
+        ```
+        // tính điểm
+        if lineCount == 1 {
+        score += 100
+        }else if lineCount == 2 {
+        score += 300
+        }else if lineCount == 3 {
+        score += 600
+        }else if lineCount == 4 {
+        score += 1000
+        }
+        // điều kiện tăng level
+        if score > 20000{
+        gameLever(6, 0.16)
+        }else if score > 10000{
+        gameLever(5, 0.23)
+        }else if score > 6000 {
+        gameLever(4, 0.28)
+        }else if score > 3000 {
+        gameLever(3, 0.32)
+        }else if score > 1500 {
+        gameLever(2, 0.35)
+        }
+        ```
+        
+    **SoundManager**
+    - Cung cấp hiệu ứng âm thanh.
+    - Nhạc nền, nhạc GameOver, nhạc lúc người chơi ăn điểm.
+    ```
+    class SoundManager {
+    var bombSoundEffect: AVAudioPlayer?
+    
+    ...
+    }
+    ```
+    
