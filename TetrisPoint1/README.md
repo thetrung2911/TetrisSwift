@@ -1,25 +1,26 @@
 #  Game Tetris
 1. Game Tetris là một loại game sắp xếp các khối gạch chồng lên nhau.
 2. Mô tả chi tiết:
+
     **Các đối tượng trong trò chơi:**
-        - Các đối tượng gạch đang rơi
-        - Các đối tượng gạch đã rơi ở đáy
+    - Các đối tượng gạch đang rơi
+    - Các đối tượng gạch đã rơi ở đáy
 
     **Tương tác người chơi:**
-        - Chơi: Chạm vào nút Play để bắt đầu trò chơi.
-        - Tạm dừng: Chạm vào nút Pause để tạm dừng trò chơi.
-        - Di chuyển sang trái: vuốt sang trái, gạch di chuyển sang trái một ô.
-        - Di chuyển sang phải: vuốt sang phải, gạch di chuyển sang phải một ô.
-        - Rơi nhanh xuống dưới: Vuốt xuống dưới, gạch di chuyển nhanh xuống dưới đến khi dừng.
-        - Xoay: Vuốt lên trên gạch sẽ xoay một góc 90 độ theo kim đồng hồ.
+    - Chơi: Chạm vào nút Play để bắt đầu trò chơi.
+    - Tạm dừng: Chạm vào nút Pause để tạm dừng trò chơi.
+    - Di chuyển sang trái: vuốt sang trái, gạch di chuyển sang trái một ô.
+    - Di chuyển sang phải: vuốt sang phải, gạch di chuyển sang phải một ô.
+    - Rơi nhanh xuống dưới: Vuốt xuống dưới, gạch di chuyển nhanh xuống dưới đến khi dừng.
+    - Xoay: Vuốt lên trên gạch sẽ xoay một góc 90 độ theo kim đồng hồ.
 3. Cấu trúc game:
 
-    + MainViewController.swift
-    + GameView.swift
-    - GameBroad.swift
-    - GameScore.swift
-    - Brick.swift
-    + SoundManager.swift
+    - MainViewController.swift
+    - GameView.swift:
+        + GameBroad.swift
+        + GameScore.swift
+        + Brick.swift
+    - SoundManager.swift
 
     **Brick**
     - Game có 7 loại gạch khác nhau gồm: i, j, l, t, z, s, o.
