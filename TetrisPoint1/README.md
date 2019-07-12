@@ -25,6 +25,7 @@
     - Game có 7 loại gạch khác nhau gồm: i, j, l, t, z, s, o.
     - Gạch có các loại màu khác nhau.
 
+
     enum BrickType {
         case i(UIColor)
         case j(UIColor)
@@ -51,6 +52,8 @@
         ]
         ...    
     }
+
+
 
     * Game Broad:
     - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
