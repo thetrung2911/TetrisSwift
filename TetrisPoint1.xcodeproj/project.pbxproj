@@ -63,6 +63,7 @@
 		904D25E522C0B05900E3C093 = {
 			isa = PBXGroup;
 			children = (
+				9075E0CB22D592A70024BF19 /* README.md */,
 				904D25F022C0B05900E3C093 /* TetrisPoint1 */,
 				904D25EF22C0B05900E3C093 /* Products */,
 			);
@@ -88,7 +89,6 @@
 				904D25FD22C0B05A00E3C093 /* Info.plist */,
 				904D260322C0B10300E3C093 /* MainViewController.swift */,
 				906D0DB622C5C6B60057041C /* SoundManager.swift */,
-				9075E0CB22D592A70024BF19 /* README.md */,
 			);
 			path = TetrisPoint1;
 			sourceTree = "<group>";
