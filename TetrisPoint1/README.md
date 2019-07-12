@@ -71,6 +71,8 @@
         static let rows = 21
         static let cols = 12
         ...
+        var board = [[UIColor]]()
+        ...
         func update() -> (isGameOver:Bool, droppedBrick:Bool) {
         
             guard let currentBrick = self.currentBrick else { return (false, false)  }
