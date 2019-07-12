@@ -37,9 +37,7 @@
         case s(UIColor)
         case o(UIColor)
    }  
-
-```
-    class Brick: NSObject {
+   class Brick: NSObject {
 
     ...
     static var bricks = [
@@ -53,7 +51,6 @@
     ]
     ...    
     }
-```
 
 * Game Broad:
 - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
