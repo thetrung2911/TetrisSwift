@@ -1,17 +1,17 @@
 #  Game Tetris
 1. Game Tetris là một loại game sắp xếp các khối gạch chồng lên nhau.
 2. Mô tả chi tiết:
-    * Các đối tượng trong trò chơi:
-    - Các đối tượng gạch đang rơi
-    - Các đối tượng gạch đã rơi ở đáy
+    **Các đối tượng trong trò chơi:**
+        - Các đối tượng gạch đang rơi
+        - Các đối tượng gạch đã rơi ở đáy
 
-    * Tương tác người chơi:
-    - Chơi: Chạm vào nút Play để bắt đầu trò chơi.
-    - Tạm dừng: Chạm vào nút Pause để tạm dừng trò chơi.
-    - Di chuyển sang trái: vuốt sang trái, gạch di chuyển sang trái một ô.
-    - Di chuyển sang phải: vuốt sang phải, gạch di chuyển sang phải một ô.
-    - Rơi nhanh xuống dưới: Vuốt xuống dưới, gạch di chuyển nhanh xuống dưới đến khi dừng.
-    - Xoay: Vuốt lên trên gạch sẽ xoay một góc 90 độ theo kim đồng hồ.
+    **Tương tác người chơi:**
+        - Chơi: Chạm vào nút Play để bắt đầu trò chơi.
+        - Tạm dừng: Chạm vào nút Pause để tạm dừng trò chơi.
+        - Di chuyển sang trái: vuốt sang trái, gạch di chuyển sang trái một ô.
+        - Di chuyển sang phải: vuốt sang phải, gạch di chuyển sang phải một ô.
+        - Rơi nhanh xuống dưới: Vuốt xuống dưới, gạch di chuyển nhanh xuống dưới đến khi dừng.
+        - Xoay: Vuốt lên trên gạch sẽ xoay một góc 90 độ theo kim đồng hồ.
 3. Cấu trúc game:
 
     + MainViewController.swift
@@ -21,7 +21,7 @@
     - Brick.swift
     + SoundManager.swift
 
-    * Brick
+    **Brick**
     - Game có 7 loại gạch khác nhau gồm: i, j, l, t, z, s, o.
     - Gạch có các loại màu khác nhau.
 
@@ -52,14 +52,13 @@
     ...    
     }
 
-* Game Broad:
-- GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
+**Game Broad**
+        - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
 
 
-* Game Score:
-+ Dùng để hiện thông tin Level, Score, Line, Button Play/Stop
-
-- Level: Hiển thị Level người chơi đang chơi. Game gồm có 6 Level từ 1-6 tốc độ mỗi Level sẽ tăng dần.
-- Line: Hiển thị số hàng mà mình đã ăn được.
-- Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
-- Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
+**Game Score**
+        + Dùng để hiện thông tin Level, Score, Line, Button Play/Stop:
+            - Level: Hiển thị Level người chơi đang chơi. Game gồm có 6 Level từ 1-6 tốc độ mỗi Level sẽ tăng dần.
+            - Line: Hiển thị số hàng mà mình đã ăn được.
+            - Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
+            - Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
