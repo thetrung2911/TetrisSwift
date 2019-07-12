@@ -52,7 +52,6 @@ class GameBroad: UIView {
     }
     
     func gameStart(){
-        print("gameStart")
         level = 1
         lines = 0
         score = 0
@@ -239,6 +238,7 @@ class GameBroad: UIView {
             }
         }
     }
+    // xoay khối gạch
     func rotateBrick() {
         guard let currentBrick = self.currentBrick else { return }
         
@@ -248,7 +248,7 @@ class GameBroad: UIView {
             self.setNeedsDisplay()
         }
     }
-    
+    // chống xoay khi các Poin ở vị trí ko thể xoay
     func canRotate(_ brick:Brick, rotatedPoints:[CGPoint]) -> Bool {
         
         for p in rotatedPoints {

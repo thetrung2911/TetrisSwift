@@ -23,9 +23,9 @@ class Brick{
     // Khai báo một mảng CGPoint
     var points = [CGPoint]()
     
-    // trục x, y, brick bắt đầu xuất hiện ở cột thứ 4 hàng 0
+    // trục x, y, brick bắt đầu xuất hiện ở cột thứ 6 hàng -3
     
-    var tx: Int = 4
+    var tx: Int = 5
     var ty: Int = -3
     
     static var nextBricks = [Brick]()
