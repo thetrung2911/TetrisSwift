@@ -37,30 +37,30 @@
     }  
 
 ```
-    class Brick: NSObject {
+class Brick: NSObject {
 
-        ...
-        static var bricks = [
-        BrickType.i(UIColor(red:1.00, green:0.80, blue:0.00, alpha:1.0)),
-        BrickType.j(UIColor(red:0.20, green:0.60, blue:1.00, alpha:1.0)),
-        BrickType.l(UIColor(red:0.20, green:0.80, blue:0.20, alpha:1.0)),
-        BrickType.t(UIColor(red:0.80, green:0.00, blue:1.00, alpha:1.0)),
-        BrickType.z(UIColor(red:0.00, green:0.60, blue:0.60, alpha:1.0)),
-        BrickType.s(UIColor(red:1.00, green:0.80, blue:1.00, alpha:1.0)),
-        BrickType.o(UIColor(red:1.00, green:0.60, blue:0.60, alpha:1.0))
-        ]
-        ...    
-    }
+    ...
+    static var bricks = [
+    BrickType.i(UIColor(red:1.00, green:0.80, blue:0.00, alpha:1.0)),
+    BrickType.j(UIColor(red:0.20, green:0.60, blue:1.00, alpha:1.0)),
+    BrickType.l(UIColor(red:0.20, green:0.80, blue:0.20, alpha:1.0)),
+    BrickType.t(UIColor(red:0.80, green:0.00, blue:1.00, alpha:1.0)),
+    BrickType.z(UIColor(red:0.00, green:0.60, blue:0.60, alpha:1.0)),
+    BrickType.s(UIColor(red:1.00, green:0.80, blue:1.00, alpha:1.0)),
+    BrickType.o(UIColor(red:1.00, green:0.60, blue:0.60, alpha:1.0))
+    ]
+    ...    
+}
+```
+
+* Game Broad:
+- GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
 
 
-    * Game Broad:
-    - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
+* Game Score:
++ Dùng để hiện thông tin Level, Score, Line, Button Play/Stop
 
-
-    * Game Score:
-    + Dùng để hiện thông tin Level, Score, Line, Button Play/Stop
-
-    - Level: Hiển thị Level người chơi đang chơi. Game gồm có 6 Level từ 1-6 tốc độ mỗi Level sẽ tăng dần.
-    - Line: Hiển thị số hàng mà mình đã ăn được.
-    - Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
-    - Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
+- Level: Hiển thị Level người chơi đang chơi. Game gồm có 6 Level từ 1-6 tốc độ mỗi Level sẽ tăng dần.
+- Line: Hiển thị số hàng mà mình đã ăn được.
+- Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
+- Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
