@@ -30,6 +30,17 @@
         let gameScore = GameScore(frame: CGRect.zero)
         let gameBroad = GameBroad(frame: CGRect.zero)
         ...
+        func setupLayout(){
+            // tạo gameBroad
+            self.addSubview(gameBroad)
+            gameBroad.translatesAutoresizingMaskIntoConstraints = false
+            gameBroad.leftAnchor.constraint(equalTo: self.leftAnchor, constant: margin).isActive = true
+            gameBroad.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -margin).isActive = true
+            gameBroad.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0 ).isActive = true
+            gameBroad.topAnchor.constraint(equalTo: self.bottomAnchor, constant:-CGFloat((GameBroad.rows + 1) * GameBroad.margin + GameBroad.rows * GameBroad.brickSize)).isActive = true
+            ...
+        }
+        ...
     }
     ```
     
