@@ -52,14 +52,14 @@
     ]
     ...    
     }
+    ```
+    **Game Broad**
+    - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
 
-**Game Broad**
-        - GameBroad gồm 21 hàng 12 cột, mảng hai chiều của UIColor.
 
-
-**Game Score**
-        + Dùng để hiện thông tin Level, Score, Line, Button Play/Stop:
-            - Level: Hiển thị Level người chơi đang chơi. Game gồm có 6 Level từ 1-6 tốc độ mỗi Level sẽ tăng dần.
-            - Line: Hiển thị số hàng mà mình đã ăn được.
-            - Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
-            - Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
+    **Game Score**
+    - Dùng để hiện thông tin Level, Score, Line, Button Play/Stop:
+        + Level: Hiển thị Level người chơi đang chơi. Game gồm có 6 Level từ 1-6 tốc độ mỗi Level sẽ tăng dần.
+        + Line: Hiển thị số hàng mà mình đã ăn được.
+        + Score: Hiển thị điểm của người chơi, sẽ có bốn thang điểm khi người chơi ăn cùng lúc ăn nhiều hàng với nhau.
+        + Button Play/Pause: Dùng để bắt đầu và tạm dừng game.
