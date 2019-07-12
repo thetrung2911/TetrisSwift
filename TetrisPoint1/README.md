@@ -26,7 +26,7 @@
         - Game có 7 loại gạch khác nhau gồm: i, j, l, t, z, s, o.
         - Gạch có các loại màu khác nhau.
         
-        ```swift
+            ```swift
         enum BrickType {
         case i(UIColor)
         case j(UIColor)
