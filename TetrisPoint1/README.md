@@ -26,7 +26,7 @@
     - Gạch có các loại màu khác nhau.
 
 ```
-enum BrickType {
+    enum BrickType {
         case i(UIColor)
         case j(UIColor)
         case l(UIColor)
@@ -38,7 +38,7 @@ enum BrickType {
 
 ```
 
-class Brick: NSObject {
+    class Brick: NSObject {
 
     ...
     static var bricks = [
@@ -51,7 +51,7 @@ class Brick: NSObject {
     BrickType.o(UIColor(red:1.00, green:0.60, blue:0.60, alpha:1.0))
     ]
     ...    
-}
+    }
 ```
 ```
 * Game Broad:
