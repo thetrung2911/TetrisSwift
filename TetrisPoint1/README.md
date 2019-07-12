@@ -35,22 +35,22 @@
         case s(UIColor)
         case o(UIColor)
     }  
-``` 
 ```
-    class Brick: NSObject {
+   ```
+            class Brick: NSObject {
 
-        ...
-        static var bricks = [
-        BrickType.i(UIColor(red:1.00, green:0.80, blue:0.00, alpha:1.0)),
-        BrickType.j(UIColor(red:0.20, green:0.60, blue:1.00, alpha:1.0)),
-        BrickType.l(UIColor(red:0.20, green:0.80, blue:0.20, alpha:1.0)),
-        BrickType.t(UIColor(red:0.80, green:0.00, blue:1.00, alpha:1.0)),
-        BrickType.z(UIColor(red:0.00, green:0.60, blue:0.60, alpha:1.0)),
-        BrickType.s(UIColor(red:1.00, green:0.80, blue:1.00, alpha:1.0)),
-        BrickType.o(UIColor(red:1.00, green:0.60, blue:0.60, alpha:1.0))
-        ]
-        ...    
-    }
+            ...
+            static var bricks = [
+            BrickType.i(UIColor(red:1.00, green:0.80, blue:0.00, alpha:1.0)),
+            BrickType.j(UIColor(red:0.20, green:0.60, blue:1.00, alpha:1.0)),
+            BrickType.l(UIColor(red:0.20, green:0.80, blue:0.20, alpha:1.0)),
+            BrickType.t(UIColor(red:0.80, green:0.00, blue:1.00, alpha:1.0)),
+            BrickType.z(UIColor(red:0.00, green:0.60, blue:0.60, alpha:1.0)),
+            BrickType.s(UIColor(red:1.00, green:0.80, blue:1.00, alpha:1.0)),
+            BrickType.o(UIColor(red:1.00, green:0.60, blue:0.60, alpha:1.0))
+            ]
+            ...    
+        }
 ```
 
     * Game Broad:
