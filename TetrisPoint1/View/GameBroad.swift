@@ -156,15 +156,15 @@ class GameBroad: UIView {
         }
         // điều kiện tăng level
         if score > 20000{
-            gameLever(6, 0.16)
+            gameLevel(6, 0.16)
         }else if score > 10000{
-            gameLever(5, 0.23)
+            gameLevel(5, 0.23)
         }else if score > 6000 {
-            gameLever(4, 0.28)
+            gameLevel(4, 0.28)
         }else if score > 3000 {
-            gameLever(3, 0.32)
-        }else if score > 1500 {
-            gameLever(2, 0.35)
+            gameLevel(3, 0.32)
+        }else if score > 50 {
+            gameLevel(2, 0.35)
         }
         
         for line in linesToRemove {
@@ -174,7 +174,7 @@ class GameBroad: UIView {
         }
         
     }
-    func gameLever(_ levelGame: Int,_ time: Double){
+    func gameLevel(_ levelGame: Int,_ time: Double){
         level = levelGame
         GameView.times = time
         GameBroad.time.invalidate()
